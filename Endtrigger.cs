@@ -26,8 +26,16 @@ public class Endtrigger : MonoBehaviour
             levelCompleteUI.SetActive(true);
 
             musicwin.Play();
-            
+
+            StartCoroutine("Quit");
 
         }
     }
+
+    IEnumerator Quit()
+    {
+        yield return new WaitForSeconds(2);
+        Application.Quit();
+    }
+
 }
