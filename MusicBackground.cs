@@ -10,7 +10,7 @@ public class MusicBackground : MonoBehaviour
     void Start()
     {
         music1 = GetComponent<AudioSource>();
-        music1.PlayDelayed(2.0f);
+        music1.Play();
 
         Destroy(gameObject, interval);
     }
